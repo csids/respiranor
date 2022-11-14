@@ -5,3 +5,4 @@
 ^license\.md$
 ^cran-comments\.md$
 Makefile
+^pkgdown$
