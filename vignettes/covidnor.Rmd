@@ -1,10 +1,10 @@
 ---
-title: "Introduction to PACKAGE"
-author: "Richard White"
-date: "2020-02-17"
+title: "Introduction to covidnor"
+author: "Chi Zhang"
+date: "2022-11-14"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to PACKAGE}
+  %\VignetteIndexEntry{Introduction to covidnor}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,4 +16,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Concept 
+## Covid19 data for Norway
+
+This is a dataset that contain detailed COVID data in Norway. 
+
+

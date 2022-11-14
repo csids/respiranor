@@ -1,15 +1,15 @@
-Package: PACKAGE
-Title: Organising Projects
-Version: 2020.5.25
+Package: covidnor
+Title: Public COVID19 data for Norway
+Version: 2022.11.14
 Authors@R: c(
-  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")),
-  person(given = "Folkehelseinstituttet", role = c("cph"))
+  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre")),
+  person(given = "CDIDS", role = c("cph"))
   )
-Description: A system to help you organize projects. Most analyses have three (or more) main sections: code, results, and data, each with different requirements (version control/sharing/encryption). You provide folder locations and 'org' helps you take care of the details.
+Description: Change later.
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
-URL: https://docs.sykdomspulsen.no/PACKAGE/, https://github.com/sykdomspulsen-org/PACKAGE
-BugReports: https://github.com/sykdomspulsen-org/PACKAGE/issues
+URL: https://docs.sykdomspulsen.no/covidnor/, https://github.com/sykdomspulsen-org/covidnor
+BugReports: https://github.com/sykdomspulsen-org/covidnor/issues
 Encoding: UTF-8
 LazyData: true
 Imports: data.table,
@@ -20,5 +20,5 @@ Suggests: testthat,
     rmarkdown,
     rstudioapi,
     glue
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 VignetteBuilder: knitr
