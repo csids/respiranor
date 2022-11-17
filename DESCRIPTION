@@ -2,14 +2,13 @@ Package: covidnor
 Title: Public COVID19 data for Norway
 Version: 2022.11.14
 Authors@R: c(
-  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre")),
-  person(given = "CDIDS", role = c("cph"))
+  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre"))
   )
 Description: Change later.
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
-URL: https://docs.sykdomspulsen.no/covidnor/, https://github.com/sykdomspulsen-org/covidnor
-BugReports: https://github.com/sykdomspulsen-org/covidnor/issues
+URL: https://www.csids.no/covidnor/, https://github.com/csids/covidnor
+BugReports: https://github.com/csids/covidnor/issues
 Encoding: UTF-8
 LazyData: true
 Imports: data.table,

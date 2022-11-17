@@ -7,11 +7,11 @@
         1
       }
     )
-  
+
   packageStartupMessage(paste0(
     "covidnor ",
     version,
     "\n",
-    "https://docs.sykdomspulsen.no/covidnor/"
+    "https://www.csids.no/covidnor/"
   ))
 }
