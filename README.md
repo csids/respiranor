@@ -2,7 +2,7 @@
 
 ## Overview 
 
-[covidnor](https://www.csids.no/covidnor/) is a system to help you organize projects. Most analyses have three (or more) main sections: code, results, and data, each with different requirements (version control/sharing/encryption). You provide folder locations and 'org' helps you take care of the details.
+[covidnor](https://www.csids.no/covidnor/) 
 
 Read the introduction vignette [here](http://docs.sykdomspulsen.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
 
