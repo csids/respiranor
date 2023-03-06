@@ -6,4 +6,4 @@
 ^cran-comments\.md$
 Makefile
 ^pkgdown$
-R_noexport
+data-raw/*

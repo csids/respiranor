@@ -1,6 +1,6 @@
 Package: covidnor
 Title: Public COVID19 data for Norway
-Version: 2022.11.14
+Version: 2023.03.06
 Authors@R: c(
   person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre"))
   )
@@ -19,5 +19,5 @@ Suggests: testthat,
     rmarkdown,
     rstudioapi,
     glue
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
