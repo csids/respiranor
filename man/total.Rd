@@ -3,7 +3,7 @@
 \docType{data}
 \name{total}
 \alias{total}
-\title{COVID-19 data for total age/sex in Norway}
+\title{COVID-19 data for total age/sex in Norway.}
 \format{
 \describe{
 \item{granularity_time}{Time granularity: day, isoweek}

@@ -1,4 +1,4 @@
-#' COVID-19 data for total age/sex in Norway
+#' COVID-19 data for total age/sex in Norway.
 #'
 #' This dataset contains COVID-19 data in Norway,
 #' from 2020 week 8 (2020-02-23) to 2022 week 45 (2022-11-13)
