@@ -1,3 +1,3 @@
-# covidnor 2020.2.17
+# covidnor 2023.4.20
 
-- Package is created
+- `total` dataset is released for total age/sex in Norway.

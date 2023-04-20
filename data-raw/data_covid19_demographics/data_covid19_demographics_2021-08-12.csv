@@ -1,0 +1,15 @@
+granularity_time,granularity_geo,location_code,border,age,sex,year,week,yrwk,season,x,date,n,date_of_publishing,tag_outcome
+total,nation,norge,2020,90+,female,1900,1,1900-01,1899/1900,24,1900-01-01,135,2021-08-12,death
+total,nation,norge,2020,90+,male,1900,1,1900-01,1899/1900,24,1900-01-01,64,2021-08-12,death
+total,nation,norge,2020,0-39,female,1900,1,1900-01,1899/1900,24,1900-01-01,2,2021-08-12,death
+total,nation,norge,2020,0-39,male,1900,1,1900-01,1899/1900,24,1900-01-01,4,2021-08-12,death
+total,nation,norge,2020,40-49,female,1900,1,1900-01,1899/1900,24,1900-01-01,5,2021-08-12,death
+total,nation,norge,2020,40-49,male,1900,1,1900-01,1899/1900,24,1900-01-01,6,2021-08-12,death
+total,nation,norge,2020,50-59,female,1900,1,1900-01,1899/1900,24,1900-01-01,6,2021-08-12,death
+total,nation,norge,2020,50-59,male,1900,1,1900-01,1899/1900,24,1900-01-01,31,2021-08-12,death
+total,nation,norge,2020,60-69,female,1900,1,1900-01,1899/1900,24,1900-01-01,27,2021-08-12,death
+total,nation,norge,2020,60-69,male,1900,1,1900-01,1899/1900,24,1900-01-01,71,2021-08-12,death
+total,nation,norge,2020,70-79,female,1900,1,1900-01,1899/1900,24,1900-01-01,72,2021-08-12,death
+total,nation,norge,2020,70-79,male,1900,1,1900-01,1899/1900,24,1900-01-01,115,2021-08-12,death
+total,nation,norge,2020,80-89,female,1900,1,1900-01,1899/1900,24,1900-01-01,125,2021-08-12,death
+total,nation,norge,2020,80-89,male,1900,1,1900-01,1899/1900,24,1900-01-01,144,2021-08-12,death
