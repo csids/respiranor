@@ -2,7 +2,7 @@
 
 ## Overview 
 
-[covidnor](https://www.csids.no/covidnor/) 
+Starting 2020-04-24 and continuing until 2022-11-14, when they were shut down due to a lack of funding, the Sykdomspulsen team from the Norwegian Institute of Public Health automatically published machine-friendly COVID-19 data updates on weekdays at 13:15. These updates included information on case numbers, ICU/hospital admissions, deaths, testing, and vaccinations. [covidnor](https://www.csids.no/covidnor/) cleans and merges the publically available datasets into analysis-ready datasets.
 
 Read the introduction vignette [here](http://docs.sykdomspulsen.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
 
