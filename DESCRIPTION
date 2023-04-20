@@ -1,23 +1,26 @@
 Package: covidnor
-Title: Public COVID19 data for Norway
+Title: Public COVID-19 data for Norway
 Version: 2023.03.06
 Authors@R: c(
-  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre"))
+  person("Chi", "Zhang", email = "andreachizhang@yahoo.com", role = c("aut", "cre")),
+  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut"),
+    comment = c(ORCID = "0000-0002-6747-1726")
+  )
   )
 Description: Change later.
-Depends: R (>= 3.3.0)
+Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 URL: https://www.csids.no/covidnor/, https://github.com/csids/covidnor
 BugReports: https://github.com/csids/covidnor/issues
 Encoding: UTF-8
 LazyData: true
-Imports: data.table,
-    magrittr,
-    ggplot2
+Imports: data.table
 Suggests: testthat,
     knitr,
     rmarkdown,
     rstudioapi,
-    glue
+    glue,
+    magrittr,
+    ggplot2
 RoxygenNote: 7.2.3
 VignetteBuilder: knitr
