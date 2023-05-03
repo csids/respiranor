@@ -254,7 +254,7 @@ s_day[location_code=="county03",.(date,vax_dose_1_by_regdate_n)]
 s_day[,location_code := stringr::str_replace(location_code, "county", "county_nor")]
 s_day[,location_code := stringr::str_replace(location_code, "municip", "municip_nor")]
 s_day[,location_code := stringr::str_replace(location_code, "norge", "nation_nor")]
-s_day[, granularity_time := "day"]
+s_day[, granularity_time := "date"]
 s_day[, border := 2020]
 s_day[, age := "total"]
 s_day[, sex := "total"]
@@ -280,7 +280,7 @@ s_isoweek <- s_day[,.(
   vax_dose_2_by_regdate_n = suma(vax_dose_2_by_regdate_n),
   vax_dose_3_by_regdate_n = suma(vax_dose_3_by_regdate_n),
   vax_dose_4_by_regdate_n = suma(vax_dose_4_by_regdate_n),
-  granularity_time = "isoweek"
+  granularity_time = "isoyearweek"
 ), by=.(location_code, isoyearweek, border, age, sex)]
 cstidy::set_csfmt_rts_data_v1(s_isoweek)
 
@@ -353,4 +353,5 @@ d[
 ]
 
 total <- d
-usethis::use_data(total, compress = "xz", version = 3)
+cstidy::set_csfmt_rts_data_v1(total)
+usethis::use_data(total, compress = "xz", version = 3, overwrite = TRUE)
