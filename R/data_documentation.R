@@ -45,4 +45,7 @@
 #' \item{location_name}{Location name (may not be unique)}
 #' \item{location_name_description_nb}{Location name description (is unique)}
 #' }
+#' @examples
+#' print(covidnor::total[1,])
+#'
 "total"
