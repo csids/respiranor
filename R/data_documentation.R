@@ -5,7 +5,7 @@
 #'
 #' @format
 #' \describe{
-#' \item{granularity_time}{Time granularity: day, isoweek}
+#' \item{granularity_time}{Time granularity: day, isoyearweek}
 #' \item{granularity_geo}{Geographical granularity: nation, county, municip}
 #' \item{location_code}{Location code}
 #' \item{border}{Redistricting border: 2020}
