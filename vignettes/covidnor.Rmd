@@ -14,10 +14,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-Starting 2020-04-24 and continuing until 2022-11-14, when they were shut down due to a lack of funding, the Sykdomspulsen team from the Norwegian Institute of Public Health automatically published [machine-friendly COVID-19 data updates](http://github.com/folkehelseinstituttet/surveillance_data) on weekdays at 13:15. These updates included information on case numbers, ICU/hospital admissions, deaths, testing, and vaccinations.
+Starting 2020-04-24 and continuing until 2022-11-14, when they were shut down due to a lack of funding, the Sykdomspulsen team from the Norwegian Institute of Public Health automatically published [machine-friendly COVID-19 data updates](http://github.com/folkehelseinstituttet/surveillance_data) on weekdays at 13:15. These updates included information on: 
+
+* case numbers
+* ICU/hospital admissions
+* deaths
+* testing
+* vaccinations
 
 [covidnor](https://www.csids.no/covidnor/) cleans and merges the publicly available datasets into analysis-ready datasets.
 
+
+Read this to learn how to get 
+
 ```{r}
-covidnor::total
+# load total data (419k rows)
+totaldata <- covidnor::total
+# get weekly cases (confirmed) and hospitalisation for Norway
+case_hosp <- totaldata[granularity_time == 'isoyearweek' &
+                     granularity_geo == 'nation',
+                   .(date, location_name, cases_by_testdate_n, hospital_admissions_main_cause_n)]
+case_hosp
 ```
