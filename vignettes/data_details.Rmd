@@ -1,0 +1,139 @@
+---
+title: "Data details"
+author: "Chi Zhang"
+date: "2023-05-18"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Data details}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+In this vignette, we provide more detailed information on the data included in `covidnor`, and demonstrate how to extract the data you need. 
+
+
+## Covid data outcomes
+
+We have the following groups of Covid data, for certain combinations of time and location specifications. 
+
+There are two type of **time granularity**: day (`date`) and week (`isoyearweek`) in the data. For **geo granularity**, there are country (`nation`), county (`county`)and municipality (`municip`). Note that not all outcomes of interest have municipality level data.
+
+
+Population data has been attached to compute number of cases **per 100.000 population** for a certain location. 
+
+In this dataset we only provide **total** age groups and sex groups. 
+
+
+
+### Cases
+
+**Cases** are the PCR test confirmed Covid positive cases. We have the following variables:
+
+* number of cases (counts, per 100.000 population) by the date of PCR test, `cases_by_testdate_n`, `cases_by_testdate_vs_pop_pr100000`
+* number of cases (counts, per 100.000 population) by the date of registration, `cases_by_regdate_n`, `cases_by_regdate_vs_pop_pr100000`
+
+Available for 
+
+* time: daily, weekly
+* location: nation, county, municip (only for registration date)
+
+### Tests
+
+**Tests** are the number of testing events. We have the following variables: 
+
+* number of testing events (all, positive, negative), `testevents_all_n`, `testevents_pos_n`, `testevents_neg_n`
+* percentage of testing events that are positive, `testevents_pos_vs_all_pr100`
+
+Available for 
+
+* time: daily, weekly
+* location: nation
+
+
+### Hospital admission
+
+We provide two variables related to hospital admissions: 
+
+* admission due to Covid as main cause, `hospital_admissions_main_cause_n`; 
+* ICU admission, `icu_admissions_n`.  
+
+Available for 
+
+* time: daily, weekly
+* location: nation
+
+### Vaccination
+
+For vaccination we provide data for two dates: vaccination date and registration date. We have data on 4 doses. For each dose, we have the following (e.g. dose 1):  
+
+* number of vaccinations delivered on the date, `vax_dose_1_by_vaxdate_n`
+* number of vaccinations registered in SYSVAK, `vax_dose_1_by_regdate_n`
+* cumulative number of vaccinations delivered by the date, `vax_dose_1_by_vaxdate_sum0_999999_n`
+
+
+Available for 
+
+* time: daily, weekly
+* location: nation, county, municip (only for registration date)
+
+
+
+
+
+
+## Subsetting data 
+
+Instead of working directly on `total` data, you might want to use a certain combination of **time, location, outcome**. We recommend using the [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) syntax for data filtering and subsetting.
+
+The way we organize time and location codes is documented in more detail in another csverse package, [cstidy](https://www.csids.no/cstidy/index.html). We highly recommend you read through this [vignette](https://www.csids.no/cstidy/articles/csfmt_rts_data_v1.html#context-specific-columns)!
+
+
+
+### Based on `granularity_time` and `granularity_geo`
+
+To get **weekly** covid cases and hospital admissions as main cause for Norway (nation):
+
+```{r}
+# load total data (419k rows)
+totaldata <- covidnor::total
+
+# get weekly cases (confirmed) and hospitalisation for Norway
+case_hosp <- totaldata[granularity_time == 'isoyearweek' &
+                     granularity_geo == 'nation',
+                   .(date, 
+                     location_name, 
+                     cases = cases_by_testdate_n, 
+                     hospital_adm = hospital_admissions_main_cause_n)]
+case_hosp[1:6,]
+```
+
+
+### Based on specific dates and locations
+
+Get data for a certain date and location combination:
+
+```{r}
+totaldata[date == '2021-12-10' & location_code %in% c('county_nor03', 'county_nor15'), 
+          .(date, location_name, 
+            cases = cases_by_testdate_n, 
+            vax_1 = vax_dose_1_by_vaxdate_n, 
+            vaxcum1 = vax_dose_1_by_vaxdate_sum0_999999_n)]
+```
+
+Can also get data for a whole calendar month, such as April 2022, 
+
+```{r}
+totaldata[calyearmonth == '2022-M04' & location_code == 'county_nor03', 
+          .(date, location_name, 
+            cases = cases_by_testdate_n)]
+```
+
+
+
