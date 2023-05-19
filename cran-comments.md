@@ -1,3 +1,10 @@
+# Re-submission
+
+Fixed issues: 
+
+* use canonical form to link package (data.table)
+* change http -> https when appropriate
+
 # New submission
 
 ## R CMD check results

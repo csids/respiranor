@@ -12,7 +12,7 @@ The following data are provided in this package:
 * vaccinations
 
 
-Read the introduction vignette [here](http://www.csids.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
+Read the introduction vignette [here](https://www.csids.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
 
 ## csverse
 

@@ -90,7 +90,7 @@ Available for
 
 ## Subsetting data 
 
-Instead of working directly on `total` data, you might want to use a certain combination of **time, location, outcome**. We recommend using the [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) syntax for data filtering and subsetting.
+Instead of working directly on `total` data, you might want to use a certain combination of **time, location, outcome**. We recommend using the [data.table](https://CRAN.R-project.org/package=data.table) syntax for data filtering and subsetting.
 
 The way we organize time and location codes is documented in more detail in another csverse package, [cstidy](https://www.csids.no/cstidy/index.html). We highly recommend you read through this [vignette](https://www.csids.no/cstidy/articles/csfmt_rts_data_v1.html#context-specific-columns)!
 

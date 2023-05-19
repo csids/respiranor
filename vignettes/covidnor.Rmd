@@ -29,7 +29,7 @@ The overall data is stored as `total`, and has 419k rows. More information on wh
 
 ## Getting started
 
-Instead of working directly on `total` data, you might want to use a certain combination of **time, location, outcome**. We recommend using the [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) syntax for data filtering and subsetting.
+Instead of working directly on `total` data, you might want to use a certain combination of **time, location, outcome**. We recommend using the [data.table](https://CRAN.R-project.org/package=data.table) syntax for data filtering and subsetting.
 
 For example, to get **weekly** Covid cases and hospital admissions as main cause for Norway:
 
@@ -58,4 +58,4 @@ Several of CSIDS packages ([csstyle](https://www.csids.no/csstyle/index.html),  
 
 ### Background 
 
-This package curates publicly available COVID-19 data in Norway between 2020-04-24 to 2022-11-14. The original data repository (`surveillance_data`) which automatically published machine-friendly COVID-19 data updates on weekdays at 13:15 can be accessed [here](http://github.com/folkehelseinstituttet/surveillance_data). The original repository was archived by Sykdomspulsen team at the Norwegian Institute of Public Health due to lack of funding. 
+This package curates publicly available COVID-19 data in Norway between 2020-04-24 to 2022-11-14. The original data repository (`surveillance_data`) which automatically published machine-friendly COVID-19 data updates on weekdays at 13:15 can be accessed [here](https://github.com/folkehelseinstituttet/surveillance_data). The original repository was archived by Sykdomspulsen team at the Norwegian Institute of Public Health due to lack of funding. 
