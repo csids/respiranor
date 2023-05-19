@@ -41,8 +41,8 @@ In this dataset we only provide **total** age groups and sex groups.
 
 Available for 
 
-* time: daily, weekly
-* location: nation, county, municip (only for registration date)
+* granularity_time: date, isoyearweek
+* granularity_geo: nation, county, municip (only for registration date)
 
 ### Tests
 
@@ -53,8 +53,8 @@ Available for
 
 Available for 
 
-* time: daily, weekly
-* location: nation
+* granularity_time: date, isoyearweek
+* granularity_geo: nation
 
 
 ### Hospital admission
@@ -66,8 +66,8 @@ We provide two variables related to hospital admissions:
 
 Available for 
 
-* time: daily, weekly
-* location: nation
+* granularity_time: date, isoyearweek
+* granularity_geo: nation
 
 ### Vaccination
 
@@ -80,8 +80,8 @@ For vaccination we provide data for two dates: vaccination date and registration
 
 Available for 
 
-* time: daily, weekly
-* location: nation, county, municip (only for registration date)
+* granularity_time: date, isoyearweek
+* granularity_geo: nation, county, municip (only for registration date)
 
 
 
@@ -98,7 +98,7 @@ The way we organize time and location codes is documented in more detail in anot
 
 ### Based on `granularity_time` and `granularity_geo`
 
-To get **weekly** covid cases and hospital admissions as main cause for Norway (nation):
+To get **weekly** Covid cases and hospital admissions as main cause for Norway (nation):
 
 ```{r}
 # load total data (419k rows)

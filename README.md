@@ -2,11 +2,17 @@
 
 ## Overview 
 
-Starting 2020-04-24 and continuing until 2022-11-14, when they were shut down due to a lack of funding, the Sykdomspulsen team from the Norwegian Institute of Public Health automatically published [machine-friendly COVID-19 data updates](http://github.com/folkehelseinstituttet/surveillance_data) on weekdays at 13:15. These updates included information on case numbers, ICU/hospital admissions, deaths, testing, and vaccinations. 
+[covidnor](https://www.csids.no/covidnor/) cleans and merges the publicly available datasets on COVID-19 in Norway into analysis-ready datasets. 
 
-[covidnor](https://www.csids.no/covidnor/) cleans and merges the publicly available datasets into analysis-ready datasets.
+The following data are provided in this package: 
 
-Read the introduction vignette [here](http://docs.sykdomspulsen.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
+* case numbers
+* ICU/hospital admissions
+* testing
+* vaccinations
+
+
+Read the introduction vignette [here](http://www.csids.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
 
 ## csverse
 

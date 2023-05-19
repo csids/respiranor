@@ -31,7 +31,7 @@ The overall data is stored as `total`, and has 419k rows. More information on wh
 
 Instead of working directly on `total` data, you might want to use a certain combination of **time, location, outcome**. We recommend using the [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) syntax for data filtering and subsetting.
 
-For example, to get **weekly** covid cases and hospital admissions as main cause for Norway:
+For example, to get **weekly** Covid cases and hospital admissions as main cause for Norway:
 
 ```{r}
 # load total data (419k rows)

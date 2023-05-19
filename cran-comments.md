@@ -1,16 +1,4 @@
-## Resubmission
-
-This is a resubmission. In this version I have:
-
-- Omitted all redundancies like "R Functions" in my title 
-- Added more details about my package in my Description text
-- Fixed unexecutable code in man/InitialiseProject.Rd
-
-
-## Test environments
-* local Debian 9.5 install, R 3.5.2
-* ubuntu 14.04 (on travis-ci), R 3.5.2
-* win-builder (devel and release)
+# New submission
 
 ## R CMD check results
 
@@ -18,10 +6,10 @@ This is a resubmission. In this version I have:
 
 Notes: 
 
-* checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Richard White <w@rwhite.no>'
-
-New submission
+* checking data for non-ASCII characters ... NOTE
+  Note: found 292980 marked UTF-8 strings
+  
+Maintainer: 'Chi Zhang <andreachizhang@yahoo.com>'
 
 ## Downstream dependencies
 

@@ -18,7 +18,7 @@
 \item{season}{Season}
 \item{seasonweek}{Season week}
 \item{calyear}{Calendar year}
-\item{calmonth}{Calenadr month}
+\item{calmonth}{Calendar month}
 \item{date}{Date}
 \item{cases_by_testdate_n}{Number of cases by date of PCR test}
 \item{cases_by_testdate_vs_pop_pr100000}{Number of cases by date of PCR test per 100.000 population}
