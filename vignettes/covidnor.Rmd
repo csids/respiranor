@@ -35,7 +35,7 @@ For example, to get **weekly** Covid cases and hospital admissions as main cause
 
 ```{r}
 # load total data (419k rows)
-totaldata <- covidnor::total
+totaldata <- covidnor::total_b2020
 
 # get weekly cases (confirmed) and hospitalisation for Norway
 case_hosp <- totaldata[granularity_time == 'isoyearweek' &

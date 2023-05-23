@@ -22,6 +22,8 @@ lab_by_time[, date_of_publishing := NULL]
 msis_by_time_location <- fread(file.path("data-raw", "data_covid19_msis_by_time_location_latest.csv"))
 setnames(msis_by_time_location, "n", "cases_by_testdate_n")
 setnames(msis_by_time_location, "pr100000", "cases_by_testdate_vs_pop_pr100000")
+
+
 msis_by_time_location[, pop := NULL]
 msis_by_time_location[, date_of_publishing := NULL]
 msis_by_time_location[, location_name := NULL]
@@ -352,6 +354,7 @@ d[
   )
 ]
 
-total <- d
-cstidy::set_csfmt_rts_data_v1(total)
-usethis::use_data(total, compress = "xz", version = 3, overwrite = TRUE)
+# total <- d
+total_b2020 <- d
+cstidy::set_csfmt_rts_data_v1(total_b2020)
+usethis::use_data(total_b2020, compress = "xz", version = 3, overwrite = TRUE)

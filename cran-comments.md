@@ -1,4 +1,10 @@
-# Re-submission
+# Re-submission 2023.05.23
+
+Fixed issues:
+
+* Add CSIDS in the Copyright field (Authors@R)
+
+# Re-submission 2023.05.18
 
 Fixed issues: 
 

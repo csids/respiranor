@@ -1,4 +1,4 @@
-#' COVID-19 data for total age/sex in Norway.
+#' COVID-19 data for total age/sex in Norway (2020 border).
 #'
 #' This dataset contains COVID-19 data in Norway,
 #' from 2020 week 8 (2020-02-23) to 2022 week 45 (2022-11-13)
@@ -46,6 +46,6 @@
 #' \item{location_name_description_nb}{Location name description (is unique)}
 #' }
 #' @examples
-#' print(covidnor::total[1,])
+#' print(covidnor::total_b2020[1,])
 #'
-"total"
+"total_b2020"
