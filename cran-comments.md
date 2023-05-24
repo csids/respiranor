@@ -1,3 +1,9 @@
+# Re-submission 2023.05.24
+
+Fixed issues: 
+
+* Update url for external page: https://www.csids.no/csalert/articles/short_term_trend.html
+
 # Re-submission 2023.05.23
 
 Fixed issues:

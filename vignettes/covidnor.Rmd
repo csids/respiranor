@@ -53,7 +53,7 @@ For more details, please refer to the [vignette](https://www.csids.no/covidnor/a
 Several of CSIDS packages ([csstyle](https://www.csids.no/csstyle/index.html),  [csalert](https://www.csids.no/csalert/index.html)) make use of `covidnor` data. You can read the following documentation to find out more, 
 
 * [Epicurves](https://www.csids.no/csstyle/articles/epicurves.html) in `cstyle`,
-* [Short term trend for COVID cases](https://www.csids.no/csalert/articles/short_term_trend_msis.html) in `csalert`.
+* [Short term trend for COVID cases](https://www.csids.no/csalert/articles/short_term_trend.html) in `csalert`.
 
 
 ### Background 
