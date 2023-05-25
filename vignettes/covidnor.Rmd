@@ -48,7 +48,7 @@ case_hosp
 ```
 
 
-For more details, please refer to the [vignette](https://www.csids.no/covidnor/articles/data_details.html) and [data documentation](https://www.csids.no/covidnor/reference/total.html).
+For more details, please refer to the [vignette](https://www.csids.no/covidnor/articles/data_details.html) and [data documentation](https://www.csids.no/covidnor/reference/total_b2020.html).
 
 Several of CSIDS packages ([csstyle](https://www.csids.no/csstyle/index.html),  [csalert](https://www.csids.no/csalert/index.html)) make use of `covidnor` data. You can read the following documentation to find out more, 
 
