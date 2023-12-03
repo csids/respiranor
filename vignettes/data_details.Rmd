@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-In this vignette, we provide more detailed information on the data included in `covidnor`, and demonstrate how to extract the data you need. 
+In this vignette, we provide more detailed information on the data included in `respiranor`, and demonstrate how to extract the data you need. 
 
 
 ## Covid data outcomes
@@ -102,7 +102,7 @@ To get **weekly** Covid cases and hospital admissions as main cause for Norway (
 
 ```{r}
 # load total data (419k rows)
-totaldata <- covidnor::total_b2020
+totaldata <- respiranor::total_b2020
 
 # get weekly cases (confirmed) and hospitalisation for Norway
 case_hosp <- totaldata[granularity_time == 'isoyearweek' &

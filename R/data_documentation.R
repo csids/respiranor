@@ -46,6 +46,6 @@
 #' \item{location_name_description_nb}{Location name description (is unique)}
 #' }
 #' @examples
-#' print(covidnor::total_b2020[1,])
+#' print(respiranor::total_b2020[1,])
 #'
 "total_b2020"

@@ -1,8 +1,8 @@
 ---
-title: "Introduction to covidnor"
+title: "Introduction to respiranor"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to covidnor}
+  %\VignetteIndexEntry{Introduction to respiranor}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 
-[covidnor](https://www.csids.no/covidnor/) cleans and merges the publicly available datasets on COVID-19 in Norway into analysis-ready datasets. 
+[respiranor](https://www.csids.no/respiranor/) cleans and merges the publicly available datasets on COVID-19 in Norway into analysis-ready datasets. 
 
 The following data are provided in this package: 
 
@@ -24,7 +24,7 @@ The following data are provided in this package:
 * testing
 * vaccinations
 
-The overall data is stored as `total`, and has 419k rows. More information on what variables and specifications are available, and how to extract specifications you want can be found [here](https://www.csids.no/covidnor/articles/data_details.html). 
+The overall data is stored as `total`, and has 419k rows. More information on what variables and specifications are available, and how to extract specifications you want can be found [here](https://www.csids.no/respiranor/articles/data_details.html). 
 
 
 ## Getting started
@@ -35,7 +35,7 @@ For example, to get **weekly** Covid cases and hospital admissions as main cause
 
 ```{r}
 # load total data (419k rows)
-totaldata <- covidnor::total_b2020
+totaldata <- respiranor::total_b2020
 
 # get weekly cases (confirmed) and hospitalisation for Norway
 case_hosp <- totaldata[granularity_time == 'isoyearweek' &
@@ -48,9 +48,9 @@ case_hosp
 ```
 
 
-For more details, please refer to the [vignette](https://www.csids.no/covidnor/articles/data_details.html) and [data documentation](https://www.csids.no/covidnor/reference/total_b2020.html).
+For more details, please refer to the [vignette](https://www.csids.no/respiranor/articles/data_details.html) and [data documentation](https://www.csids.no/respiranor/reference/total_b2020.html).
 
-Several of CSIDS packages ([csstyle](https://www.csids.no/csstyle/index.html),  [csalert](https://www.csids.no/csalert/index.html)) make use of `covidnor` data. You can read the following documentation to find out more, 
+Several of CSIDS packages ([csstyle](https://www.csids.no/csstyle/index.html),  [csalert](https://www.csids.no/csalert/index.html)) make use of `respiranor` data. You can read the following documentation to find out more, 
 
 * [Epicurves](https://www.csids.no/csstyle/articles/epicurves.html) in `cstyle`,
 * [Short term trend for COVID cases](https://www.csids.no/csalert/articles/short_term_trend.html) in `csalert`.

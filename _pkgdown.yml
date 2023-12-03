@@ -1,4 +1,4 @@
-url: https://www.csids.no/covidnor/
+url: https://www.csids.no/respiranor/
 
 template:
   package: csidstemplatepkgdown

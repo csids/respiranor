@@ -2,7 +2,7 @@
 
 Fixed issues: 
 
-* Update url for data documentation page (https://www.csids.no/covidnor/reference/total_b2020.html)
+* Update url for data documentation page (https://www.csids.no/respiranor/reference/total_b2020.html)
 * Update url for external page: https://www.csids.no/csalert/articles/short_term_trend.html
 
 # Re-submission 2023.05.23

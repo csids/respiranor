@@ -1,8 +1,8 @@
-# covidnor <a href="https://www.csids.no/covidnor/"><img src="man/figures/logo.png" align="right" width="120" /></a>
+# respiranor <a href="https://www.csids.no/respiranor/"><img src="man/figures/logo.png" align="right" width="120" /></a>
 
 ## Overview 
 
-[covidnor](https://www.csids.no/covidnor/) cleans and merges the publicly available datasets on COVID-19 in Norway into analysis-ready datasets. 
+[respiranor](https://www.csids.no/respiranor/) cleans and merges the publicly available datasets on COVID-19 in Norway into analysis-ready datasets. 
 
 The following data are provided in this package: 
 
@@ -12,7 +12,7 @@ The following data are provided in this package:
 * vaccinations
 
 
-Read the introduction vignette [here](https://www.csids.no/covidnor/articles/covidnor.html) or run `help(package="covidnor")`.
+Read the introduction vignette [here](https://www.csids.no/respiranor/articles/respiranor.html) or run `help(package="respiranor")`.
 
 ## csverse
 
@@ -38,6 +38,6 @@ Save the file and restart R.
 You can now install [csverse](https://www.csids.no/packages.html) packages from our [drat repository](https://www.csids.no/drat/).
 
 ```
-install.packages("covidnor")
+install.packages("respiranor")
 ```
 

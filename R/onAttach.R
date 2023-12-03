@@ -1,16 +1,16 @@
 #' @import data.table
 .onAttach <- function(libname, pkgname) {
     version <- tryCatch(
-      utils::packageDescription("covidnor", fields = "Version"),
+      utils::packageDescription("respiranor", fields = "Version"),
       warning = function(w){
         1
       }
     )
 
   packageStartupMessage(paste0(
-    "covidnor ",
+    "respiranor ",
     version,
     "\n",
-    "https://www.csids.no/covidnor/"
+    "https://www.csids.no/respiranor/"
   ))
 }
